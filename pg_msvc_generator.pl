@@ -256,8 +256,8 @@ sub append_proj_default_version
 	print $fh <<EOF;
   <PropertyGroup>
     <PgVer Condition=" '\$(pgver)' == '' ">$default_version</PgVer>
-    <PgRoot Condition=" '\$(pgroot)|\$(Platform)' == '|win32' ">C:\\Program Files (x86)\\PostgreSQL</PgRoot>
-    <PgRoot Condition=" '\$(pgroot)|\$(Platform)' == '|x64' ">C:\\Program Files\\PostgreSQL</PgRoot>
+    <PgRoot Condition=" '\$(pgroot)|\$(Platform)' == '|win32' ">C:\postgres\postgres-REL_%POSTGRES_MAJOR%_%POSTGRES_MINOR%\src</PgRoot>
+    <PgRoot Condition=" '\$(pgroot)|\$(Platform)' == '|x64' ">C:\postgres\postgres-REL_%POSTGRES_MAJOR%_%POSTGRES_MINOR%\src</PgRoot>
   </PropertyGroup>
 EOF
 }
