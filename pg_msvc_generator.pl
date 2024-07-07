@@ -209,7 +209,7 @@ EOF
 			}
 
 			print $fh <<EOF;
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v170</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
 EOF
